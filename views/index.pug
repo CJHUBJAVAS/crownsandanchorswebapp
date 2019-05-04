@@ -2,4 +2,8 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p #{user} Welcome to #{title}
+  p Enter you age:
+    input(type="number", data-bind="value age")
+  p 
+    span(data-bind="text: message")
